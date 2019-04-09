@@ -3,12 +3,16 @@ package com.jadson.application;
 public class Manager extends Employee{
     private int password;
 
-    // escolhe a senha de acesso
+    // Choose the access password
+    // Escolhe a senha de acesso
+
     public void setPassword(int password){
         this.password = password;
     }
 
+    // authenticates the manager
     // autentica o gerente
+
     public boolean authenticates(int password){
         if(this.password == password){
             System.out.println("Access allowed");
