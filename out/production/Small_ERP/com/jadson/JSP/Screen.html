@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<%@page contentType="text/html" import="java.util.Date, java.text.*, com.jadson.connectionBD.*"
+pageEncoding="ISO-8859-1"%>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page test connection ...</title>
+</head>
+<body>
+    <h1>
+
+        <%
+        ConexaoMySQL.getConnectionMySQL();
+        out.println(ConnectionMySQL.statusConection())
+        %>
+    </h1>
+
+</body>
+</html>
